@@ -5,7 +5,7 @@ import branca.colormap as cm
 from streamlit_folium import st_folium
 
 # Load the forecast data CSV
-df = pd.read_csv('/content/forecast_data.csv')
+df = pd.read_csv('forecast_data.csv')
 
 df.rename(columns={
     'latitude': 'Latitude',
