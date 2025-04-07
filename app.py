@@ -27,7 +27,7 @@ selected_month = st.sidebar.selectbox(
 # Filter data
 filtered = df[(df["Year"] == selected_year) & (df["Month"] == selected_month)]
 
-st.title("Predicted Displacement Map")
+st.title(" Displacement Map")
 st.subheader(f"{pd.to_datetime(f'{selected_year}-{selected_month}-01').strftime('%B %Y')}")
 
 if filtered.empty:
